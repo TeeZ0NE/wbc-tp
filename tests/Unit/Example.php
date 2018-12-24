@@ -5,7 +5,7 @@ namespace Tests\Unit;
 use Tests\TestCase;
 //use Illuminate\Foundation\Testing\RefreshDatabase;
 use app\Http\Controllers\HomeController;
-class ExampleTest extends TestCase
+class Example extends TestCase
 {
 private	$home_c;
 	public function setUp()

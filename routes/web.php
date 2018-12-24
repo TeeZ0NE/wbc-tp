@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+/*Route::view('/','welcome');*/
+/*Route::fallback(function (){
+	return 'nothing';
+});*/
+Route::get('/','HomeController')
+	->name('home');

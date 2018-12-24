@@ -16,3 +16,13 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('unsubscribe/{id}', function ($id){
+	return ['unsu'=>$id];
+})->name('unsubscribe');
+Route::apiresource('use','API\MainController');
+
+Route::group(['prefix'=>'accounts'], function(){
+//	Route::get('{screen_name?}','API\AccountController@index');
+	Route::post('new', 'API\AccountController@store');
+});
+

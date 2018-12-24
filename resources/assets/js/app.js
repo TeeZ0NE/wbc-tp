@@ -5,9 +5,9 @@
  */
 
 require('./bootstrap');
-require('bootstrap');
+// require('bootstrap');
 // let $ = require("jquery");
-require('popper.js');
+// require('popper.js');
 
 // window.Vue = require('vue');
 
